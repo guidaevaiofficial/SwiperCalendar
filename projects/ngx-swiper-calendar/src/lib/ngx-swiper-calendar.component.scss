@@ -1,0 +1,65 @@
+div.calendar {
+  padding: 1rem;
+
+  & > div.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 4px;
+    margin-bottom: 16px;
+
+    & > .calendar-month {
+      text-align: center;
+      font-size: 16px;
+      color: var(--ion-color-primary);
+      font-weight: 600;
+      margin: 0;
+    }
+
+    & > div.next-month, div.previous-month {
+      min-width: 24px;
+      max-width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    & > div.next-month {
+      justify-content: flex-end;
+    }
+  }
+}
+
+div.days-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+
+  overflow-x: auto;
+  column-gap: 8px;
+
+  & > div.day {
+    min-width: 42px;
+    max-width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 1px solid var(--ion-color-primary);
+    color: var(--ion-color-primary);
+    font-weight: 600;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+
+    &.active {
+      color: #FFFFFF;
+      background-color: var(--ion-color-primary);
+    }
+  }
+
+}
