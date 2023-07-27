@@ -1,6 +1,19 @@
 {
   "name": "ngx-swiper-calendar",
-  "version": "0.0.1",
+  "description": "This library allows you to add a swiper calendar to your app",
+  "version": "0.0.7",
+  "author": "Guida e Vai",
+  "repository": "https://github.com/guidaevaiofficial/SwiperCalendar.git",
+  "keywords": [
+    "angular",
+    "ionic",
+    "typescript",
+    "calendar",
+    "scrollable",
+    "swiper",
+    "swipe"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^16.0.0",
     "@angular/core": "^16.0.0"
@@ -8,5 +21,18 @@
   "dependencies": {
     "tslib": "^2.3.0"
   },
-  "sideEffects": false
+  "sideEffects": false,
+  "module": "fesm2022/ngx-swiper-calendar.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/ngx-swiper-calendar.mjs",
+      "esm": "./esm2022/ngx-swiper-calendar.mjs",
+      "default": "./fesm2022/ngx-swiper-calendar.mjs"
+    }
+  }
 }
